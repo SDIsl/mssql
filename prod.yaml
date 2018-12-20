@@ -49,7 +49,9 @@ services:
 
     mssql:
         image: mcr.microsoft.com/mssql/server
-        networks: *public
+        networks:
+            default:
+            inverseproxy_shared:
         ports:
             - "127.0.0.1:1433:1433"
         environment:
