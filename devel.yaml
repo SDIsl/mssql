@@ -122,6 +122,7 @@ services:
         environment:
             SA_PASSWORD: Reject121
             ACCEPT_EULA: Y
+            MSSQL_PID: Express
 
 networks:
     default:
