@@ -48,7 +48,7 @@ services:
             - smtp
 
     mssql:
-        image: mcr.microsoft.com/mssql/server
+        image: sdiodoo/mssql-a3
         networks:
             default:
             inverseproxy_shared:
@@ -58,6 +58,8 @@ services:
             SA_PASSWORD: Reject121
             ACCEPT_EULA: Y
             MSSQL_PID: Express
+        volumes:
+            - a3db:/var/opt/mssql/data
 
 
 networks:
@@ -72,3 +74,5 @@ volumes:
     filestore:
     db:
     smtp:
+    a3db:
+    a3files:

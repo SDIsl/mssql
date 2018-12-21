@@ -36,6 +36,7 @@ services:
         volumes:
             - ./odoo/custom:/opt/odoo/custom:ro,z
             - ./odoo/auto/addons:/opt/odoo/auto/addons:rw,z
+            - a3files:/opt/odoo/a3files
         depends_on:
             - cdnjs_cloudflare_proxy
             - db
@@ -115,7 +116,7 @@ services:
             PRE_RESOLVE: 1
 
     mssql:
-        image: mcr.microsoft.com/mssql/server
+        image: sdiodoo/mssql-a3
         networks: *public
         ports:
             - "127.0.0.1:1433:1433"
@@ -123,6 +124,8 @@ services:
             SA_PASSWORD: Reject121
             ACCEPT_EULA: Y
             MSSQL_PID: Express
+        volumes:
+            - a3db:/var/opt/mssql/data
 
 networks:
     default:
@@ -132,3 +135,5 @@ networks:
 volumes:
     filestore:
     db:
+    a3db:
+    a3files:
