@@ -1,0 +1,12 @@
+l10n-spain:
+ - "*"
+community-data-files:
+ - "*"
+server-tools:
+ - "*"
+server-ux:
+ - "*"
+web:
+ - "*"
+sa3:
+ - "*"

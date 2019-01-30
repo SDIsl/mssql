@@ -26,3 +26,53 @@
         oca $ODOO_VERSION
     merges:
         - oca $ODOO_VERSION
+
+./community-data-files:
+    defaults:
+        depth: $DEPTH_DEFAULT
+    remotes:
+        oca: https://github.com/OCA/community-data-files.git
+    target:
+        oca $ODOO_VERSION
+    merges:
+        - oca $ODOO_VERSION
+
+./server-tools:
+    defaults:
+        depth: $DEPTH_DEFAULT
+    remotes:
+        srt: https://github.com/OCA/server-tools.git
+    target:
+        srt $ODOO_VERSION
+    merges:
+    - srt $ODOO_VERSION
+
+./server-ux:
+    defaults:
+        depth: $DEPTH_DEFAULT
+    remotes:
+        sux: https://github.com/OCA/server-ux.git
+    target:
+        sux $ODOO_VERSION
+    merges:
+    - sux $ODOO_VERSION
+
+./web:
+    defaults:
+        depth: $DEPTH_DEFAULT
+    remotes:
+        oca: https://github.com/OCA/web.git
+    target:
+        oca $ODOO_VERSION
+    merges:
+        - oca $ODOO_VERSION
+
+./sync_a3erp:
+    defaults:
+        depth: $DEPTH_DEFAULT
+    remotes:
+        sa3: https://github.com/SDIsl/sync_a3erp.git
+    target:
+        sa3 $ODOO_VERSION
+    merges:
+        - sa3 $ODOO_VERSION
