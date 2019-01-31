@@ -66,13 +66,13 @@
         oca $ODOO_VERSION
     merges:
         - oca $ODOO_VERSION
-        -
+
 ./sync_a3erp:
     defaults:
         depth: $DEPTH_DEFAULT
     remotes:
-        sa3: https://github.com/SDIsl/sync_a3erp.git
+        sa3: https://aadc9d82b8c967f1201fa9125f369de702d972f2@github.com/SDIsl/sync_a3erp.git
     target:
-        oca $ODOO_VERSION
+        sa3 $ODOO_VERSION
     merges:
-        - oca $ODOO_VERSION
+        - sa3 $ODOO_VERSION
