@@ -15,8 +15,9 @@ services:
         tty: true
         volumes:
             - filestore:/var/lib/odoo:z
-            - a3files:/opt/odoo/a3files:z
-            - /home/gestion/:/opt/odoo/gestion/:z
+#            - a3files:/opt/odoo/a3files:z
+#            - /home/gestion/:/opt/odoo/gestion/:z
+            - /home/ubuntu/:/opt/odoo/a3files:z
         labels:
             traefik.docker.network: "inverseproxy_shared"
             traefik.enable: "true"
