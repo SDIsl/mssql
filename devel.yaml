@@ -116,7 +116,7 @@ services:
             PRE_RESOLVE: 1
 
     mssql:
-        image: sdiodoo/mssql-a3
+        image: sdiodoo/mssql
         networks: *public
         ports:
             - "127.0.0.1:1433:1433"
