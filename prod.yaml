@@ -60,8 +60,7 @@ services:
             MSSQL_PID: Express
         volumes:
             - a3db:/var/opt/mssql/data
-#            - a3files:/opt/odoo/a3files:z
-            - /home/ubuntu/:/opt/odoo/a3files:z
+            - /home/ubuntu/:/opt/odoo/a3files:rw,z
 
 
 networks:

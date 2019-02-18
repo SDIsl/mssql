@@ -36,7 +36,7 @@ services:
         volumes:
             - ./odoo/custom:/opt/odoo/custom:ro,z
             - ./odoo/auto/addons:/opt/odoo/auto/addons:rw,z
-            - a3files:/opt/odoo/a3files
+            - /home/ubuntu/:/opt/odoo/a3files:rw,z
         depends_on:
             - cdnjs_cloudflare_proxy
             - db
@@ -126,8 +126,7 @@ services:
             MSSQL_PID: Express
         volumes:
             - a3db:/var/opt/mssql/data
-#            - a3files:/opt/odoo/a3files:z
-            - /home/ubuntu/:/opt/odoo/a3files:z
+            - /home/ubuntu/:/opt/odoo/a3files:rw,z
 
 networks:
     default:
