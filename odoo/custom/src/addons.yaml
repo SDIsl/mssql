@@ -1,5 +1,11 @@
 l10n-spain:
  - "*"
+crm:
+ - "*"
+project:
+ - "*"
+partner-contact:
+ - "*"
 community-data-files:
  - "*"
 server-tools:

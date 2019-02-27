@@ -27,6 +27,36 @@
     merges:
         - oca $ODOO_VERSION
 
+./crm:
+    defaults:
+        depth: $DEPTH_DEFAULT
+    remotes:
+        oca: https://github.com/OCA/crm.git
+    target:
+        oca $ODOO_VERSION
+    merges:
+        - oca $ODOO_VERSION
+
+./project:
+    defaults:
+        depth: $DEPTH_DEFAULT
+    remotes:
+        oca: https://github.com/OCA/project.git
+    target:
+        oca $ODOO_VERSION
+    merges:
+        - oca $ODOO_VERSION
+
+./partner-contact:
+    defaults:
+        depth: $DEPTH_DEFAULT
+    remotes:
+        oca: https://github.com/OCA/partner-contact.git
+    target:
+        oca $ODOO_VERSION
+    merges:
+        - oca $ODOO_VERSION
+
 ./community-data-files:
     defaults:
         depth: $DEPTH_DEFAULT
@@ -71,7 +101,7 @@
     defaults:
         depth: $DEPTH_DEFAULT
     remotes:
-        sa3: https://aadc9d82b8c967f1201fa9125f369de702d972f2@github.com/SDIsl/sync_a3erp.git
+        sa3: https://github.com/SDIsl/sync_a3erp.git
     target:
         sa3 $ODOO_VERSION
     merges:
